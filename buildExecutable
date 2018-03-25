@@ -1,4 +1,5 @@
-sudo docker stop helloworlddh
-sudo docker rm helloworlddh
-sudo docker build -t hello-world-dh .
-sudo docker run -d --name helloworlddh -p 8181:81 -v /var/lib/jenkins/workspace/helloworld_docker_demo/src/:/var/www/html hello-world-dh
+#sudo docker stop helloworlddh
+#sudo docker rm helloworlddh
+#sudo docker build -t hello-world-dh .
+sudo docker pull dnrdockerhub23/helloworld_dnrdocker
+sudo docker run -d --name helloworlddh -p 8181:81 -v /var/lib/jenkins/workspace/helloworld_dockerhub_pull_deploy_shell/src/:/var/www/html dnrdockerhub23/helloworld_dnrdocker
